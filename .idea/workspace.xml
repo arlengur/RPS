@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5e7d13-f972-47a5-9dd4-00820bf88d04" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Game$.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Game.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/GameRunner$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/GameRunner.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Lose$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Lose$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Lose.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Lose.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Move$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Move$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Move.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Move.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Paper$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Paper$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Result.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Result.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Rock$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Rock$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/RockPaperScissors$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/RockPaperScissors$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/RockPaperScissors.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/RockPaperScissors.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Scissors$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Scissors$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Tie$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Tie$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Tie.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Tie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/UI$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/UI$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/UI.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/UI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Win$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Win$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Win.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ru/arlen/game/Win.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/ru/arlen/game/RockPaperScissorsTest.class" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/ru/arlen/game/RockPaperScissorsTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__junit_junit_4_12_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_hamcrest_hamcrest_core_1_3_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_library_2_12_3_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/rps-build.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/rps.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -612,7 +599,7 @@
       <workItem from="1507033089882" duration="452000" />
       <workItem from="1507036631882" duration="1162000" />
       <workItem from="1507547979523" duration="2966000" />
-      <workItem from="1507554151983" duration="222000" />
+      <workItem from="1507554151983" duration="361000" />
     </task>
     <task id="LOCAL-00001" summary="Small refactoring.">
       <created>1507550018575</created>
@@ -621,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507550018575</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Small refactoring.">
+      <created>1507554382694</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1507554382694</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -642,7 +636,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4802000" />
+    <option name="totallyTimeSpent" value="4941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
