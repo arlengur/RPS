@@ -1,16 +1,18 @@
 package ru.arlen.game
 
-/**
-  * @author satovritti
-  */
 import scala.collection.immutable.SortedMap
 
 /**
+  * @author satovritti
+  *
   * Util object for moves
   */
 case object Move {
   val values: List[Move] = List(Rock, Paper, Scissors)
 
+  /**
+    * Maps number to Move name
+    */
   lazy val numberToMoveName: SortedMap[Int, String] = {
     val elements = values
       .zipWithIndex
@@ -20,18 +22,29 @@ case object Move {
     SortedMap(elements: _*)
   }
 
+  /**
+    * Returns move by number.
+    * @param number - index in the list
+    * @return Move object
+    */
   def findByNumber(number: Int): Move = values(number - 1)
 }
 
 /**
-  * All moves the game supports.
+  * Abstract trait for moves.
   */
 sealed trait Move {
-  def winsAgainst(opponentGesture: Move): Result
+  /**
+    * Returns the result of the comparison of moves.
+    *
+    * @param opponentMove - computer move
+    * @return - result of the comparison of moves
+    */
+  def winsAgainst(opponentMove: Move): Result
 }
 
 /**
-  * Rock move
+  * Rock move.
   */
 case object Rock extends Move {
   def winsAgainst(opponentMove: Move): Result = opponentMove match {
@@ -42,7 +55,7 @@ case object Rock extends Move {
 }
 
 /**
-  * Paper move
+  * Paper move.
   */
 case object Paper extends Move {
   def winsAgainst(opponentMove: Move): Result = opponentMove match {
@@ -53,7 +66,7 @@ case object Paper extends Move {
 }
 
 /**
-  * Scissors move
+  * Scissors move.
   */
 case object Scissors extends Move {
   def winsAgainst(opponentMove: Move): Result = opponentMove match {
@@ -63,13 +76,3 @@ case object Scissors extends Move {
   }
 }
 
-/**
-  * Result trait of the game.
-  */
-sealed trait Result
-
-case object Win extends Result
-
-case object Lose extends Result
-
-case object Tie extends Result

@@ -1,31 +1,32 @@
 package ru.arlen.game
 
+import scala.io.StdIn
+import scala.util.Try
+
 /**
   * @author satovritti
   *
   * UI class for the game.
   */
-import scala.io.StdIn
-import scala.util.Try
-
-case class UI(gameRunner: GameRunner) {
+case class UI(gameRunner: Game) {
   private var userScore: Int = 0
   private var computerScore: Int = 0
   private var numberOfGames: Int = 0
 
   /**
-    * Start point of th game
+    * Start point of the game.
     */
   def play(): Unit = {
-    print("Rock Paper Scissors!")
     playOnce()
     playAgain()
   }
 
   /**
-    * Runs game logic.
+    * Runs game once.
     */
   private def playOnce(): Unit = {
+    print("Rock Paper Scissors!")
+
     val numberToMoveNames = Move.numberToMoveName.foldLeft("") { case (result, (number, moveName)) =>
       result + s"\n$number) $moveName"
     }
@@ -58,7 +59,7 @@ case class UI(gameRunner: GameRunner) {
   }
 
   /**
-    * Retries the given user function until one of the valid values are returned
+    * Retries the given user function until one of the valid values are returned.
     */
   private def retryUntilValidValue[T](userInputFunc: => Option[T], validValues: T*): Option[T] = {
     Stream.continually(userInputFunc)
@@ -66,6 +67,11 @@ case class UI(gameRunner: GameRunner) {
       .find(userInput => validValues contains userInput) // only keep valid values
   }
 
+  /**
+    * Prints a message to the user and asks him to enter a value.
+    * @param msg - message to the user
+    * @return the user input result
+    */
   private def letPlayerChooseIntValueWithMsg(msg: String): Option[Int] = {
     print(msg)
 
@@ -76,7 +82,7 @@ case class UI(gameRunner: GameRunner) {
   }
 
   /**
-    * Prints result of the single game
+    * Prints result of the single game.
     *
     * @param result contain result of the game, user move and computer move
     */
@@ -97,7 +103,7 @@ case class UI(gameRunner: GameRunner) {
   }
 
   /**
-    * Prints the  results of all games
+    * Prints the results of all games.
     */
   private def printTableResult(): Unit = {
     // print line
@@ -119,11 +125,10 @@ case class UI(gameRunner: GameRunner) {
   }
 
   /**
-    * Prints string with certain number of stars
+    * Prints string with certain number of stars.
+    *
     * @param count number of stars
     * @return string with stars
     */
-  private def stars(count: Int) = {
-    "*" * count
-  }
+  private def stars(count: Int) = "*" * count
 }
